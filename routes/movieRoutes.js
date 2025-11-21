@@ -5,15 +5,13 @@ const {getSearchedMovies, getMoviesById} = require('../controllers/movieControll
 const movieRouter = express.Router();
 
 
-
-
 // Routes
 /**
  * GET /api/movies - THIS IS ONLY FOR TEST
  */ 
-movieRouter.get('/', (req, res)=>{
-    res.send('Sending all movies...')
-})
+// movieRouter.get('/', (req, res)=>{
+//     res.send('Sending all movies...')
+// })
 
 
 /**
