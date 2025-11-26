@@ -1,6 +1,5 @@
 const express = require('express');
 const morgan = require('morgan');
-
 // Set up all variables in the .env file
 require('dotenv').config();
 
@@ -17,7 +16,7 @@ app.use(express.json()); //body parser
 
 // ================Routes=======================
 app.use('/api/user', require('./routes/userRoutes'));
-app.use('/api/movies', require('./routes/movieRoutes'));
+app.use('/api/movies', require('./routes/movieRoutes')); //mount the movie route
 
 
 

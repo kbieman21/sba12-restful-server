@@ -2,7 +2,7 @@ const axios = require("axios");
 const API_KEY = process.env.OMDB_API_KEY;
 const BASE_URL = "http://www.omdbapi.com/";
 
-async function getSearchedMovies(req, res) {
+async function searchedMovies(req, res) {
   try {
     const title = req.query.title?.trim();
 
@@ -62,4 +62,4 @@ async function getMoviesById(req, res) {
   //console.log('KIBREAB', data);
 }
 
-module.exports = { getSearchedMovies, getMoviesById };
+module.exports = { searchedMovies, getMoviesById };
