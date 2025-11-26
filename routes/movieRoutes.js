@@ -7,10 +7,10 @@ const movieRouter = express.Router();
 
 // Routes
 /**
- * GET / - THIS IS ONLY FOR TEST
+ * GET /api/movies - THIS IS ONLY FOR TEST
  */ 
 movieRouter.get('/', (req, res)=>{
-    res.send('Sending all movies...')
+    res.send('Sending all movies...' )
 })
 
 

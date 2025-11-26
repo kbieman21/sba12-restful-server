@@ -15,7 +15,7 @@ app.use(express.json()); //body parser
 
 
 // ================Routes=======================
-app.use('/api/user', require('./routes/userRoutes'));
+
 app.use('/api/movies', require('./routes/movieRoutes')); //mount the movie route
 
 

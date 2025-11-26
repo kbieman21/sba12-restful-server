@@ -25,12 +25,13 @@ async function searchedMovies(req, res) {
     if (data.Response === "False") {
       return res.status(404).json({ error: data.Error || "Movie not found" });
     }
-    res.json(data); // Actually send the real movie data
+    res.json(data); 
+    // Actually send the real movie data
   } catch (error) {
     console.error("Error searching movie by title: ", error.message);
     res.status(500).json({ error: "Failed to fetch movie data" });
   }
-  //res.send(`Sending searched movies...${title}`);
+  
 }
 
 async function getMoviesById(req, res) {
@@ -58,8 +59,7 @@ async function getMoviesById(req, res) {
     }
   }
 
-  //res.send(`Data for movies: ${req.params.id}`);
-  //console.log('KIBREAB', data);
+
 }
 
 module.exports = { searchedMovies, getMoviesById };
